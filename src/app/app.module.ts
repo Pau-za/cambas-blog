@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +13,7 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 //Importing routes
 import { ROUTES } from "./app.routes";
 import { FooterComponent } from './shared/footer/footer.component';
+import { BlogComponent } from './components/blog/blog.component';
 
 
 @NgModule({
@@ -22,11 +23,13 @@ import { FooterComponent } from './shared/footer/footer.component';
     SearchComponent,
     PostComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],
