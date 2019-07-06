@@ -12,9 +12,8 @@ export class BlogDataService {
   }
 
   getPosts(){
-    this.http.get('http://3.14.129.214:3000/posts').subscribe((resp: any) => {
-      this.posts = resp;
-      console.log(this.posts);
-    })
+    return this.http.get('http://3.14.129.214:3000/posts');
   }
+
+    
 }

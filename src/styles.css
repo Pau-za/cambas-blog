@@ -5,8 +5,20 @@ body {
   /* color: #F2F2F2; */
 }
 
+nav{
+    background-color: #F23D3D !important;
+    width: 100%;
+    position: fixed !important;
+    z-index: 100;
+    margin-top: -129px;
+}
+
 .pointer {
   cursor: pointer;
+}
+
+.marginTop{
+    margin-top: 11%;
 }
 
 .logo-container{
