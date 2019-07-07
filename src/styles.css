@@ -7,10 +7,10 @@ body {
 
 nav{
     background-color: #F23D3D !important;
-    width: 100%;
-    position: fixed !important;
+    /* width: 100%; */
+    /* position: fixed !important; */
     z-index: 100;
-    margin-top: -129px;
+    /* margin-top: -129px; */
 }
 
 .pointer {

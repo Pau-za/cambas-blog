@@ -12,8 +12,7 @@ export class BlogDataService {
   }
 
   getPosts(){
-    return this.http.get('http://3.14.129.214:3000/posts');
+    return this.http.get('https://cors-anywhere.herokuapp.com/http://3.14.129.214:3000/posts');
   }
 
-    
 }
