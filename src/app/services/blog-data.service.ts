@@ -6,8 +6,9 @@ import { HttpClient } from "@angular/common/http";
   providedIn: 'root'
 })
 export class BlogDataService {
-  posts: any[] = [];
-  constructor(private http: HttpClient, private blogServ: BlogDataService) {
+  // posts: any[] = [];
+  constructor(private http: HttpClient, 
+    private blogServ: BlogDataService) {
     
   }
 

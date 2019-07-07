@@ -1,18 +1,21 @@
 <!-- <form class="form-inline my-2 my-lg-0"> -->
-<div class="form my-4 my-lg-2">
-  <input #word class="form-control mr-sm-2" type="search" placeholder="Search: enter a number" aria-label="Search">
-  <button (click)="searchBy(word.value)"  class="btn btn-outline-light my-2 my-sm-0">Search</button>
+<div class="container marginTop">
+  <div class="form my-4 my-lg-2">
+    <input #word class="form-control mr-sm-2" type="search" placeholder="Search: enter a number" aria-label="Search">
+    <button (click)="searchBy(word.value)" class="btn btn-outline-light my-2 my-sm-0">Search</button>
 
-</div>
-<!-- </form> -->
+  </div>
+  <!-- </form> -->
 
-<div class="text-center m-15">
-  <div class="card w-90 m-5" *ngFor="let post of allPosts">
-    <div class="card-body">
-      <h5 class="card-title text-body">{{ post.title}}</h5>
-      <p class="card-text text-body">{{post.description}}</p>
-      <a href="#" class="btn btn-primary">Keep reading...</a>
+  <div class="text-center m-15">
+    <div class="card w-90 m-5" *ngFor="let post of allPosts">
+      <div class="card-body">
+        <h5 class="card-title text-body">{{ post.title}}</h5>
+        <p class="card-text text-body">{{post.description}}</p>
+        <a href="#" class="btn btn-primary">Keep reading...</a>
+      </div>
     </div>
+
   </div>
 
 </div>

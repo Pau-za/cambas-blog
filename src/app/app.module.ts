@@ -14,6 +14,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { ROUTES } from "./app.routes";
 import { FooterComponent } from './shared/footer/footer.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { SinginComponent } from './components/singin/singin.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { BlogComponent } from './components/blog/blog.component';
     PostComponent,
     NavbarComponent,
     FooterComponent,
-    BlogComponent
+    BlogComponent,
+    SinginComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

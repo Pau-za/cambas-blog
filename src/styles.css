@@ -7,10 +7,13 @@ body {
 
 nav{
     background-color: #F23D3D !important;
-    /* width: 100%; */
-    /* position: fixed !important; */
     z-index: 100;
-    /* margin-top: -129px; */
+}
+
+.bg-home{
+  /* background-image: url('./assets/img/fondo-cambas-home.png'); */
+  opacity:0.6;
+  width: 100%;
 }
 
 .pointer {
