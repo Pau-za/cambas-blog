@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { LoginService } from "../../services/login.service";
+import { Router } from "@angular/router";
 
 
 
@@ -9,15 +10,31 @@ import { LoginService } from "../../services/login.service";
   styles: []
 })
 export class LoginComponent {
-  
+
   users: any = [];
 
-  constructor(private loginComp: LoginService) {
-    this.loginComp.getUsers().subscribe((res:any) => {
+  constructor(private loginComp: LoginService,
+    private router: Router) {
+
+    this.loginComp.getUsers().subscribe((res: any) => {
       this.users = res;
       console.log(this.users);
     })
-   }
+  }
+
+  loginFn(email, password) {
+    this.users.forEach((element) => {
+      if (element.email === email && element.password === password) {
+        console.log('welcome to Cambas!');
+        this.changeRoute();
+      }
+    })
+  }
+
+  changeRoute(){
+    this.router.navigate(['blog']);
+
+  }
 }
 
 

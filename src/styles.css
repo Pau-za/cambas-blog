@@ -16,6 +16,10 @@ nav{
   width: 100%;
 }
 
+.red-camb{
+  background-color: #F23D3D;
+}
+
 .pointer {
   cursor: pointer;
 }
