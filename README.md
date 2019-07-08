@@ -25,17 +25,17 @@ This project was generated with:
 
 Next I show you the the points of the test I accomplished:
 
-[x] To create a user via API.
-[x] To validate a user via API,
-[x] and to redirect to Posts page.
-[x] To show posts,
-[] from ten to ten.
+- [x] To create a user via API.
+- [x] To validate a user via API,
+- [x] and to redirect to Posts page.
+- [x] To show posts,
+- [ ] from ten to ten.
 To filter posts by:
-[x] author,
-[] country,
-[] range of dates.
-[] Show details of the post.
-[] To include comments with posted date.
+- [x] author,
+- [ ] country,
+- [ ] range of dates.
+- [ ] Show details of the post.
+- [ ] To include comments with posted date.
 
 ## Final result
 
