@@ -1,0 +1,14 @@
+<h2 class="text-light">Enter your email and password</h2>
+<div class="row">
+  <div class="input-group mb-3 col-6">
+    <input #emailInp type="email" class="form-control" placeholder="Email" aria-label="Email"
+      aria-describedby="button-addon2">
+  </div>
+  <div class="input-group mb-3 col-6">
+    <input #passwordInp type="password" class="form-control" placeholder="Password" aria-label="Password"
+      aria-describedby="button-addon2">
+  </div>
+  <div class="text-light text-center">
+    <a (click)="loginFn(emailInp.value, passwordInp.value)" class="btn btn-outline red-camb">Login</a>
+  </div>
+</div>

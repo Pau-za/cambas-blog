@@ -1,0 +1,27 @@
+<div class="text-light">
+  <h2>Please Sign In</h2>
+  <h5>Fill all the fields</h5>
+</div>
+
+<div class="row">
+  <div class="input-group mb-3 col-6">
+    <input #firstInp type="text" class="form-control" placeholder="FirstName" aria-label="first-name"
+      aria-describedby="button-addon2" required>
+  </div>
+  <div class="input-group mb-3 col-6">
+    <input #lastInp type="text" class="form-control" placeholder="LastName" aria-label="last-name"
+      aria-describedby="button-addon2" required>
+  </div>
+  <div class="input-group mb-3 col-6">
+    <input #emailInp type="email" class="form-control" placeholder="Email" aria-label="Email"
+      aria-describedby="button-addon2" required>
+  </div>
+  <div class="input-group mb-3 col-6">
+    <input #passwordInp type="password" class="form-control" placeholder="Password" aria-label="Password"
+      aria-describedby="button-addon2" required>
+  </div>
+  <div class="text-light text-center">
+    <a (click)="newUser(firstInp.value, lastInp.value, emailInp.value, passwordInp.value)"
+      class="btn btn-outline red-camb">Sign In</a>
+  </div>
+</div>
