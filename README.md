@@ -39,4 +39,4 @@ To filter posts by:
 
 ## Final result
 
-You can see the final result [here](https://cambasblog.firebaseapp.com/search).
+You can see the final result [here](https://cambasblog.firebaseapp.com/home).
