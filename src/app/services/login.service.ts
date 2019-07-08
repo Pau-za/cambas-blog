@@ -7,8 +7,6 @@ import { HttpClient } from "@angular/common/http";
 })
 export class LoginService {
 
-  // usersData: any[] = [];
-
   constructor(private http: HttpClient,
     private loginServ: LoginService) {
 
