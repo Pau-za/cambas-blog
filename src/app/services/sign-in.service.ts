@@ -17,9 +17,5 @@ export class SignInService {
     return this.http.get('https://cors-anywhere.herokuapp.com/http://3.14.129.214:3000/users');
   }
 
-  // addUser(user){
-  //   this.http.post('https://cors-anywhere.herokuapp.com/http://3.14.129.214:3000/users', user);
-  //   // .pipe(map(element => console.log(element)));
-  // }
 
 }

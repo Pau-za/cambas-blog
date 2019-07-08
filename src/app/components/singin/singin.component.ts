@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { SignInService } from "../../services/sign-in.service";
 import { Router } from "@angular/router";
 import { HttpClient } from "@angular/common/http";
-import { map } from 'rxjs/operators';
 
 
 @Component({
@@ -25,24 +24,26 @@ export class SinginComponent implements OnInit {
 
     this.signInServ.getUsers().subscribe((res: any) => {
       this.users = res;
-      console.log(this.users.length);
     })
-    // this.signInServ.addUser(this.user)
   }
-  
-  newUser(firstName, lastName, email, password){
+
+  newUser(firstName, lastName, email, password) {
     this.user.firstname = firstName;
     this.user.lastname = lastName;
     this.user.email = email;
     this.user.password = password;
-    this.user.id = this.users.length+1;
+    this.user.id = this.users.length + 1;
     this.addUser(this.user);
   }
 
   addUser(user: any) {
-    console.log(user);
-    console.log(this.http.post('https://cors-anywhere.herokuapp.com/http://3.14.129.214:3000/users', user)
-    .subscribe((user => console.log(user))));
+    this.http.post('https://cors-anywhere.herokuapp.com/http://3.14.129.214:3000/users', user)
+      .subscribe((user => user));
+    this.changeRoute();
+  }
+
+  changeRoute() {
+    this.router.navigate(['blog']);
   }
 
   ngOnInit() {

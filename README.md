@@ -1,27 +1,42 @@
 # CambasBlog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
+## Index
 
-## Development server
+- [The Development](#development)
+- [Tools](#tools)
+- [Accomplishments](#accomplishments)
+- [Final result](#final-result)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Development
 
-## Code scaffolding
+This project was a challenge because is the first app I develop using Angular. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+I had four days to develop the app, so I dedicated the first two in understanding the framework, and the next two I worked on the development of the blog.
 
-## Build
+## Tools
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+This project was generated with:
 
-## Running unit tests
+- [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
+- [Bootstrap](https://getbootstrap.com).
+- It feeds from an [API](http://3.14.129.214:3000/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Accomplishments
 
-## Running end-to-end tests
+Next I show you the the points of the test I accomplished:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+- [x] To create a user via API.
+- [x] To validate a user via API,
+- [x] and to redirect to Posts page.
+- [x] To show posts,
+- [] from ten to ten.
+To filter posts by:
+- [x] author,
+- [] country,
+- [] range of dates.
+- [] Show details of the post.
+- [] To include comments with posted date.
 
-## Further help
+## Final result
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+You can see the final result [here](https://cambasblog.firebaseapp.com/search).

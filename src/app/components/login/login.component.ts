@@ -25,13 +25,12 @@ export class LoginComponent {
   loginFn(email, password) {
     this.users.forEach((element) => {
       if (element.email === email && element.password === password) {
-        console.log('welcome to Cambas!');
         this.changeRoute();
       }
     })
   }
 
-  changeRoute(){
+  changeRoute() {
     this.router.navigate(['blog']);
 
   }

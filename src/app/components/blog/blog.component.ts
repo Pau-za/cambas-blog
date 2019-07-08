@@ -18,7 +18,6 @@ export class BlogComponent implements OnInit {
     })
   }
 
-  // this still doesn't work, I think I must use the pipes
   searchBy(word: number) {
     let arrFilter:any[] = [];
     this.allPosts.filter((element => {
