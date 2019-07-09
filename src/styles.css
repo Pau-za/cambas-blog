@@ -20,6 +20,16 @@ nav{
   background-color: #F23D3D;
 }
 
+.blue-camb{
+  background-color: #023373;
+}
+
+.bg-customized{
+  background-color: #022E40;
+  border-color: #022E40;
+  border: 0px solid #022E40;
+}
+
 .pointer {
   cursor: pointer;
 }
