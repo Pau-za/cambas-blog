@@ -8,7 +8,7 @@ import { SinginComponent } from "./components/singin/singin.component";
 
 export const ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
-    { path: 'blog', component: BlogComponent },
+    { path: 'blog/:id', component: BlogComponent },
     { path: 'login', component: LoginComponent },
     { path: 'signin', component: SinginComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' },

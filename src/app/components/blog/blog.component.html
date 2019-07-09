@@ -3,7 +3,6 @@
   <div class="form my-4 my-lg-2">
     <input #word class="form-control mr-sm-2" type="search" placeholder="Search: enter a number" aria-label="Search">
     <button (click)="searchBy(word.value)" class="btn btn-outline-light red-camb my-2 my-sm-0">Search</button>
-
   </div>
 
   <div class="text-center m-15">
@@ -22,16 +21,16 @@
     <li class="page-item disabled">
       <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
     </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">4</a></li>
-    <li class="page-item"><a class="page-link" href="#">5</a></li>
-    <li class="page-item"><a class="page-link" href="#">6</a></li>
-    <li class="page-item"><a class="page-link" href="#">7</a></li>
-    <li class="page-item"><a class="page-link" href="#">8</a></li>
-    <li class="page-item"><a class="page-link" href="#">9</a></li>
-    <li class="page-item"><a class="page-link" href="#">10</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 1 ]">1</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 2 ]">2</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 3 ]">3</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 4 ]">4</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 5 ]">5</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 6 ]">6</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 7 ]">7</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 8 ]">8</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 9 ]">9</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 10 ]">10</a></li>
 
     <li class="page-item">
       <a class="page-link" href="#">Next</a>
