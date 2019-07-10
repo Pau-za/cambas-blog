@@ -44,7 +44,7 @@ export class BlogComponent implements OnInit {
   showTens(){
     this.tenPosts = this.allPosts.slice(10,19);
   }
-  
+
   showTwenties(){
     this.tenPosts = this.allPosts.slice(20,29);
   }
@@ -75,6 +75,16 @@ export class BlogComponent implements OnInit {
 
   showNineties(){
     this.tenPosts = this.allPosts.slice(90,99);
+  }
+
+  getPostInfo(id:number){
+    this.allPosts.map((element) => {
+      if(element.id === id){
+        // console.log(element);
+        this.router.navigate(['/post', element.title]);
+        // return element;
+      }
+    })
   }
 
   ngOnInit() {
