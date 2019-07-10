@@ -1,18 +1,32 @@
-<!-- <form class="form-inline my-2 my-lg-0"> -->
+
 <div class="container marginTop">
   <div class="form my-4 my-lg-2">
     <input #word class="form-control mr-sm-2" type="search" placeholder="Search: enter a number" aria-label="Search">
-    <button (click)="searchBy(word.value)" class="btn btn-outline-light my-2 my-sm-0">Search</button>
-
+    <button (click)="searchBy(word.value)" class="btn btn-outline-light red-camb my-2 my-sm-0">Search</button>
   </div>
 
   <div class="text-center m-15">
-    <div class="card w-90 m-5" *ngFor="let post of allPosts">
+   <div class="card w-90 m-5" *ngFor="let post of tenPosts">
       <div class="card-body">
         <h5 class="card-title text-body">{{ post.title }}</h5>
         <p class="card-text text-body">{{post.description }}</p>
-        <a href="#" class="btn btn-primary unable">Keep reading...</a>
+        <a (click)="getPostInfo(post.id)" class="btn text-light blue-camb">Keep reading...</a>
       </div>
     </div>
   </div>
 </div>
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center bg-customized">  
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 1 ]" (click)="showUnits()">1</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 2 ]" (click)="showTens()">2</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 3 ]" (click)="showTwenties()">3</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 4 ]" (click)="showThirties()">4</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 5 ]" (click)="showFourties()">5</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 6 ]" (click)="showFifties()">6</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 7 ]" (click)="showSixties()">7</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 8 ]" (click)="showSeventies()">8</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 9 ]" (click)="showEighties()">9</a></li>
+    <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 10 ]" (click)="showNineties()">10</a></li>
+</ul>
+</nav>

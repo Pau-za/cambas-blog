@@ -5,13 +5,13 @@ import { HttpClient } from "@angular/common/http";
 @Injectable({
   providedIn: 'root'
 })
-export class BlogDataService {
+export class PostService {
 
   constructor(private http: HttpClient) {
-    
-  }
 
-  getPosts(){
-    return this.http.get('https://cors-anywhere.herokuapp.com/http://3.14.129.214:3000/posts');
-  }
+   }
+
+   getComentsPost(){
+      return this.http.get('https://cors-anywhere.herokuapp.com/http://3.14.129.214:3000/comments');
+   }
 }

@@ -1,1 +1,33 @@
-<p>post works!</p>
+<div>
+  <div class="text-right">
+    <a [routerLink]="[ '/blog', 1 ]" class="btn btn-outline-light red-camb mb-3">Back</a>
+  </div>
+  <div class="card text-center">
+    <div class="card-header">
+      <h2>{{post.title}} <small>{{post.date}}</small></h2>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Writen by: {{postAuthor.firstname}} {{postAuthor.lastname}}</h5>
+      <p class="card-text">{{post.description}}</p>
+
+      
+    </div>
+    <div class="card-footer">
+      <p>Author information:
+        <br />
+        From: {{post.country}}
+        <br />
+        Contact: <a href="mailto:postAuthor.email.">{{postAuthor.email}}</a>
+      </p>
+    </div>
+  </div>
+
+  <h3 class="text-light">Comments:</h3>
+
+  <div class="card w-90 text-center mt-5" *ngFor="let comment of commentsPost">
+    <div class="card-body">
+      <h5 class="card-title"> {{comment.date}} </h5>
+      <p class="card-text"> {{comment.body}} </p>
+    </div>
+  </div>
+</div>
