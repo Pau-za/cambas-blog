@@ -1,4 +1,4 @@
-<!-- <form class="form-inline my-2 my-lg-0"> -->
+
 <div class="container marginTop">
   <div class="form my-4 my-lg-2">
     <input #word class="form-control mr-sm-2" type="search" placeholder="Search: enter a number" aria-label="Search">
@@ -10,7 +10,6 @@
       <div class="card-body">
         <h5 class="card-title text-body">{{ post.title }}</h5>
         <p class="card-text text-body">{{post.description }}</p>
-        <!-- <a [routerLink]="[ '/blog', routeParam ]">name</a> -->
         <a (click)="getPostInfo(post.id)" class="btn text-light blue-camb">Keep reading...</a>
       </div>
     </div>
@@ -18,10 +17,7 @@
 </div>
 
 <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center bg-customized">
-    <!-- <li class="page-item disabled">
-      <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-    </li> -->
+  <ul class="pagination justify-content-center bg-customized">  
     <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 1 ]" (click)="showUnits()">1</a></li>
     <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 2 ]" (click)="showTens()">2</a></li>
     <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 3 ]" (click)="showTwenties()">3</a></li>
@@ -32,9 +28,5 @@
     <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 8 ]" (click)="showSeventies()">8</a></li>
     <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 9 ]" (click)="showEighties()">9</a></li>
     <li class="page-item"><a class="page-link" [routerLink]="[ '/blog', 10 ]" (click)="showNineties()">10</a></li>
-
-    <!-- <li class="page-item">
-      <a class="page-link" href="#">Next</a>
-    </li> -->
-  </ul>
+</ul>
 </nav>
