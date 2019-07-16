@@ -1,12 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background-color: #022E40;
+  background-color: #1D0D17;
 
   /* color: #F2F2F2; */
 }
 
 nav{
-    background-color: #F23D3D !important;
+    background-color: #D95252 !important;
     z-index: 100;
 }
 
@@ -17,17 +17,17 @@ nav{
 }
 
 .red-camb{
-  background-color: #F23D3D;
+  background-color: #8C5D5D;
 }
 
 .blue-camb{
-  background-color: #023373;
+  background-color: #D95252;
 }
 
 .bg-customized{
-  background-color: #022E40;
-  border-color: #022E40;
-  border: 0px solid #022E40;
+  background-color: #1D0D17;
+  border-color: #1D0D17;
+  border: 0px solid #1D0D17;
 }
 
 .pointer {
